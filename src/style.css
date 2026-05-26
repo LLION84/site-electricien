@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+* {
+  font-family: 'DM Sans', -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.coin-coupe {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
+}
+
+.ligne-accent::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background: #F59E0B;
+  margin-right: 12px;
+  vertical-align: middle;
+  border-radius: 2px;
+}
